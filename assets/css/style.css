@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+}
+
+body {
+    background-color: rgb(245, 200, 207);
+}
+
+header {
+    display: flex;
+}
+
+#avatar-image {
+    display: flex;
+    width: 25%;
+}
+
+ul {
+    display: flex
+}
+
+li {
+    list-style: none;
+}
