@@ -16,7 +16,7 @@ body {
 h1 {
     background-color: var(--teal);
     color: var(--gray);
-    padding: 1rem;
+    padding: 1.3rem;
 }
 
 header {
@@ -35,12 +35,35 @@ nav ul li {
     margin: 1.2rem 3rem;
     list-style-type: none;
     border-bottom: 0.5rem solid var(--teal);
+    padding: 1rem;
 }
 
 nav ul li a {
     color: var(--teal);
     font-size: 1.2rem;
     text-decoration: none;
+    padding: 1rem;
+}
+
+#header-image {
+    display: flex;
+    justify-content: end;
+    height: 10rem;
+    width: 100%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYC7WLbjYnWmbqUmXaPBn3mH51KuRQ9FUi6A&usqp=CAU);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-image-caption {
+    position: absolute;
+    margin-left: 70rem;
+    margin-top: 5rem;
+    padding: 1em;
+    background-color: var(--teal);
+    color: var(--gray);
+    font-weight: bold;
+    font-size: large;
 }
 
 main {
@@ -55,7 +78,7 @@ main {
     margin: 1rem;
     align-items: center;
     border-left: 0.5rem solid var(--text);
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .content-header {
@@ -65,8 +88,44 @@ main {
     font-size: 2rem;
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.featured-project {
+    width: 100%;
+    height: 50%;
+}
+
+.non-featured-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.project-card {
+    margin: 1rem;
+}
+
+.project-card h3 {
+    display: flex;
+    justify-content: start;
+    position: relative;
+    top: -4rem;
+    background-color: lightgray;
+    color: black;
+    width: fit-content;
+}
+
+.content img {
+    width: 100%;
+}
+
 .content ul {
     display: flex;
+    justify-content: flex-start;
 }
 
 .content ul li {
